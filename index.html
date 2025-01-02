@@ -5,64 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shubham Kelkar - Software Engineering Lab</title>
     <style>
+        /* Material 3 Inspired Styles */
+        :root {
+            --primary-color: #6200ee;
+            --primary-container-color: #bb86fc;
+            --on-primary-color: #ffffff;
+            --secondary-color: #03dac6;
+            --background-color: #f4f4f4;
+            --surface-color: #ffffff;
+            --on-surface-color: #333333;
+            --shadow-color: rgba(0, 0, 0, 0.2);
+        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            color: #333;
+            color: var(--on-surface-color);
+            background: var(--background-color);
         }
         header {
-            background: #007bff;
-            color: #fff;
-            padding: 1rem 0;
+            background: var(--primary-color);
+            color: var(--on-primary-color);
             text-align: center;
+            padding: 1.5rem 1rem;
+            box-shadow: 0 2px 4px var(--shadow-color);
         }
         header h1 {
             margin: 0;
+            font-size: 2rem;
+        }
+        header p {
+            margin: 0.5rem 0 0;
         }
         nav {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 0.5rem;
+            background: var(--primary-container-color);
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 1rem;
+            box-shadow: 0 1px 4px var(--shadow-color);
         }
         nav a {
-            color: #fff;
+            color: var(--on-primary-color);
             text-decoration: none;
-            margin: 0 10px;
+            font-weight: bold;
         }
         nav a:hover {
             text-decoration: underline;
         }
         section {
-            padding: 20px;
+            max-width: 800px;
+            margin: 2rem auto;
+            background: var(--surface-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px var(--shadow-color);
         }
         .section-title {
+            color: var(--primary-color);
             text-transform: uppercase;
             font-size: 1.2rem;
-            margin-bottom: 10px;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        ul {
+            padding-left: 1.2rem;
+        }
+        ul li {
+            margin-bottom: 0.8rem;
         }
         footer {
-            background: #333;
-            color: #fff;
+            background: var(--surface-color);
             text-align: center;
-            padding: 1rem 0;
-            margin-top: 20px;
+            padding: 1rem;
+            margin-top: 2rem;
+            box-shadow: 0 -2px 4px var(--shadow-color);
+        }
+        footer p {
+            margin: 0;
         }
         .contact-link {
-            color: #007bff;
+            color: var(--primary-color);
             text-decoration: none;
         }
         .contact-link:hover {
             text-decoration: underline;
         }
-        ul li a {
-            color: #007bff;
-            text-decoration: none;
+        button {
+            background: var(--primary-color);
+            color: var(--on-primary-color);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px var(--shadow-color);
         }
-        ul li a:hover {
-            text-decoration: underline;
+        button:hover {
+            background: var(--primary-container-color);
         }
     </style>
 </head>
@@ -94,14 +134,6 @@
                     </a>
                 </strong>
                 <p>A machine learning project to classify phishing websites.</p>
-            </li>
-            <li>
-                <strong>
-                    <a href="https://Shubham-Kelkar.github.io/Sentiment-analysis-using-NLP/" target="_blank">
-                        Sentiment Analysis Using NLP
-                    </a>
-                </strong>
-                <p>Analyzing sentiments in text data using natural language processing techniques.</p>
             </li>
             <li><em>More projects coming soon!</em></li>
         </ul>
